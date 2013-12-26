@@ -12,13 +12,28 @@
           	android:layout_marginTop="60dp" 
           	android:text="@string/app_name" 
           	android:textAppearance="?android:attr/textAppearanceLarge"/>
+      	<Spinner
+      	    android:id="@+id/level"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerHorizontal="true"
+        	android:layout_below="@id/trick_display_box" />
       	<Button
-          	android:id="@+id/rollbutton"
+          	android:id="@+id/jib_roll_button"
           	android:layout_width="wrap_content"
           	android:layout_height="wrap_content"
-          	android:layout_below="@+id/trick_display_box"
-          	android:layout_centerHorizontal="true"
+          	android:layout_below="@id/level"
+          	android:layout_alignParentLeft="true" 
           	android:layout_marginTop="41dp"
-          	android:text="@string/roll" />
+          	android:text="@string/jib_roll" />
+
+      	<Button
+      	    android:id="@+id/jump_roll_button"
+      	    android:layout_width="wrap_content"
+      	    android:layout_height="wrap_content"
+      	    android:layout_alignParentRight="true"
+      	    android:layout_below="@id/level"
+      	    android:layout_marginTop="41dp"
+      	    android:text="@string/jump_roll" />
     
 </RelativeLayout>

@@ -9,8 +9,9 @@ package com.nickcharles.trickdice;
 
 public final class R {
     public static final class array {
-        public static final int degree=0x7f060001;
-        public static final int spinDirection=0x7f060000;
+        public static final int degree=0x7f060002;
+        public static final int levels=0x7f060000;
+        public static final int spinDirection=0x7f060001;
     }
     public static final class attr {
     }
@@ -28,8 +29,10 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090002;
-        public static final int rollbutton=0x7f090001;
+        public static final int action_settings=0x7f090004;
+        public static final int jib_roll_button=0x7f090002;
+        public static final int jump_roll_button=0x7f090003;
+        public static final int level=0x7f090001;
         public static final int trick_display_box=0x7f090000;
     }
     public static final class layout {
@@ -39,10 +42,10 @@ public final class R {
         public static final int trick=0x7f080000;
     }
     public static final class string {
-        public static final int _00_30=0x7f050003;
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int roll=0x7f050002;
+        public static final int jib_roll=0x7f050002;
+        public static final int jump_roll=0x7f050003;
         public static final int set_time=0x7f050004;
         public static final int title_activity_countdown_set_time=0x7f050005;
     }

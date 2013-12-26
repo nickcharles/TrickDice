@@ -6,7 +6,9 @@ import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class TrickActivity extends Activity {
@@ -18,9 +20,24 @@ public class TrickActivity extends Activity {
 		setContentView(R.layout.activity_trick);
 	        
 		trickDisplay = (TextView) findViewById(R.id.trick_display_box);
-		Button rollButton = (Button) findViewById(R.id.rollbutton);
+
+		Spinner levelSpinner = (Spinner) findViewById(R.id.level);
+		ArrayAdapter<CharSequence> levelAdapter = ArrayAdapter.createFromResource(this,
+				R.array.levels, android.R.layout.simple_spinner_item);
+		levelAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		levelSpinner.setAdapter(levelAdapter);
 		
-		rollButton.setOnClickListener(new View.OnClickListener() {
+		
+		Button jibRollButton = (Button) findViewById(R.id.jib_roll_button);
+		Button jumpRollButton = (Button) findViewById(R.id.jump_roll_button);
+		
+		jibRollButton.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				roll();
+			}
+		});
+		
+		jumpRollButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
 				roll();
 			}
