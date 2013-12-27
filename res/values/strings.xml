@@ -17,6 +17,8 @@
     </string-array>
     
     <string-array name="spinDirection">
+        <item></item>
+        <item></item>
         <item>Frontside</item>
         <item>Backside</item>
         <item>Cab</item>
@@ -24,6 +26,7 @@
     </string-array>
     
     <string-array name="degree">
+        <item></item>
         <item>180</item>
         <item>360</item>
         <item>540</item>
@@ -32,6 +35,12 @@
     </string-array>
     
     <string-array name="grab">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
         <item>Indy</item>
         <item>Mute</item>
         <item>Melon</item>
@@ -41,6 +50,8 @@
     </string-array>
     
     <string-array name="approach">
+        <item></item>
+        <item></item>
         <item>Frontside</item>
         <item>Backside</item>
         <item>Switch Front</item>

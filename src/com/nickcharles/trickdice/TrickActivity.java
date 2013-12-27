@@ -26,8 +26,7 @@ public class TrickActivity extends Activity {
 				R.array.levels, android.R.layout.simple_spinner_item);
 		levelAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		levelSpinner.setAdapter(levelAdapter);
-		
-		
+	
 		Button jibRollButton = (Button) findViewById(R.id.jib_roll_button);
 		Button jumpRollButton = (Button) findViewById(R.id.jump_roll_button);
 		
