@@ -33,24 +33,36 @@ public class TrickActivity extends Activity {
 		
 		jibRollButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
-				roll();
+				jibRoll();
 			}
 		});
 		
 		jumpRollButton.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
-				roll();
+				jumpRoll();
 			}
 		});
 	}
 
-	private void roll() {
+	private void jibRoll() {
+		Resources res = getResources();
+		String[] approach = res.getStringArray(R.array.approach);
+		String[] slide = res.getStringArray(R.array.slide);
+		Random r = new Random();
+		int i = r.nextInt(approach.length);
+		int j = r.nextInt(slide.length);
+		trickDisplay.setText(approach[i] + " " + slide[j]);
+	}
+	
+	private void jumpRoll() {
 		Resources res = getResources();
 		String[] spinDirection = res.getStringArray(R.array.spinDirection);
 		String[] degree = res.getStringArray(R.array.degree);
+		String[] grab = res.getStringArray(R.array.grab);
 		Random r = new Random();
 		int i = r.nextInt(spinDirection.length);
 		int j = r.nextInt(degree.length);
-		trickDisplay.setText(spinDirection[i] + " " + degree[j]);
+		int k = r.nextInt(grab.length);
+		trickDisplay.setText(spinDirection[i] + " " + degree[j] + " " + grab[k]);
 	}
 }

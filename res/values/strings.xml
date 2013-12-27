@@ -30,5 +30,28 @@
         <item>720</item>
         <item>900</item>
     </string-array>
+    
+    <string-array name="grab">
+        <item>Indy</item>
+        <item>Mute</item>
+        <item>Melon</item>
+        <item>Stalefish</item>
+        <item>Nose Grab</item>
+        <item>Tail Grab</item>
+    </string-array>
+    
+    <string-array name="approach">
+        <item>Frontside</item>
+        <item>Backside</item>
+        <item>Switch Front</item>
+        <item>Switch Back</item>
+    </string-array>
+    
+    <string-array name="slide">
+        <item>50-50</item>
+        <item>Boardslide</item>
+        <item>Lip</item>
+        <item>Blunt</item>
+    </string-array>
 
 </resources>
